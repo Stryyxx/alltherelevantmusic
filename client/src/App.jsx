@@ -145,6 +145,7 @@ function App() {
 				artist: item.artists.map((artist) => artist.name).join(", "),
 				image: item.album.images[0]?.url,
 				previewUrl: item.preview_url,
+				spotifyUrl: item.external_urls.spotify,
 			}));
 
 			setResults(tracks);
@@ -211,6 +212,7 @@ function App() {
 				artist: item.artists.map((artist) => artist.name).join(", "),
 				image: item.album.images[0]?.url,
 				previewUrl: item.preview_url,
+				spotifyUrl: item.external_urls.spotify,
 			}));
 
 			setSimilarSongs(similarTracks);
@@ -359,7 +361,11 @@ function App() {
 						</AspectRatio>
 						<CardContent>
 							<div>
-								<Typography level="h4">{song.name}</Typography>
+								<Typography level="h4">
+									<a href={song.spotifyUrl} target="_blank" rel="noopener noreferrer">
+										{song.name}
+									</a>
+								</Typography>
 								<Typography level="body-md">{song.artist}</Typography>
 							</div>
 							<CardActions sx={{ display: "flex", flexDirection: "column", width: "100%" }}>
@@ -404,7 +410,16 @@ function App() {
 								</AspectRatio>
 								<CardContent>
 									<div>
-										<Typography level="h4">{song.name}</Typography>
+										<Typography level="h4">
+											<a
+												href={song.spotifyUrl}
+												target="_blank"
+												rel="noopener noreferrer"
+												className="no-underline hover:underline hover:cursor-pointer"
+											>
+												{song.name}
+											</a>
+										</Typography>
 										<Typography level="body-md">{song.artist}</Typography>
 									</div>
 									<CardActions>
