@@ -295,7 +295,7 @@ function App() {
 		<div className="App p-4">
 			<Toaster position="top-center" reverseOrder={false} />
 			<div className="flex justify-between items-center mb-4">
-				<h1 className="text-2xl font-bold p-4">Music Recommendation</h1>
+				<h1 className="text-2xl font-bold p-4">AllTheRelevantMusic</h1>
 				<div className="flex items-center border p-2 rounded-md gap-3">
 					{userProfile ? (
 						<>
