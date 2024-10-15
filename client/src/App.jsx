@@ -362,7 +362,12 @@ function App() {
 						<CardContent>
 							<div>
 								<Typography level="h4">
-									<a href={song.spotifyUrl} target="_blank" rel="noopener noreferrer">
+									<a
+										href={song.spotifyUrl}
+										target="_blank"
+										rel="noopener noreferrer"
+										className="no-underline hover:underline hover:cursor-pointer"
+									>
 										{song.name}
 									</a>
 								</Typography>
