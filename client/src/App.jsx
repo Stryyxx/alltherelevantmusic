@@ -96,7 +96,7 @@ function App() {
 
 	const handleLogin = () => {
 		const scopes =
-			"user-read-private user-read-email playlist-modify-public playlist-modify-private playlist-read-private";
+			"user-read-private user-read-email playlist-modify-public playlist-modify-private playlist-read-private playlist-read-collaborative";
 
 		const authUrl = `https://accounts.spotify.com/authorize?client_id=${clientId}&response_type=token&redirect_uri=${encodeURIComponent(
 			redirectUri
