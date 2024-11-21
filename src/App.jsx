@@ -20,7 +20,6 @@ import {
 import { Pause, PlayArrow, ExitToApp } from "@mui/icons-material";
 import { Toaster, toast } from "react-hot-toast";
 import "@fontsource/inter";
-require("dotenv").config();
 
 const clientID = process.env.CLIENT_ID;
 const redirectUri = process.env.REDIRECT_URI;
