@@ -30,7 +30,6 @@ A modern web application that lets you explore and enjoy your favorite music in 
    git clone https://github.com/Stryyxx/alltherelevantmusic.git
    cd alltherelevantmusic
 
-
 2. **Install Dependencies**:
    ```bash
    npm install
