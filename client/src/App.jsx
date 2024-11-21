@@ -18,9 +18,12 @@ import {
 	ListItemContent,
 } from "@mui/joy";
 import { Pause, PlayArrow, ExitToApp } from "@mui/icons-material";
-import { clientId, redirectUri } from "./constants";
 import { Toaster, toast } from "react-hot-toast";
 import "@fontsource/inter";
+require("dotenv").config();
+
+const clientID = process.env.CLIENT_ID;
+const redirectUri = process.env.REDIRECT_URI;
 
 function App() {
 	const [query, setQuery] = useState("");
@@ -98,7 +101,7 @@ function App() {
 		const scopes =
 			"user-read-private user-read-email playlist-modify-public playlist-modify-private playlist-read-private playlist-read-collaborative";
 
-		const authUrl = `https://accounts.spotify.com/authorize?client_id=${clientId}&response_type=token&redirect_uri=${encodeURIComponent(
+		const authUrl = `https://accounts.spotify.com/authorize?client_id=${clientID}&response_type=token&redirect_uri=${encodeURIComponent(
 			redirectUri
 		)}&scope=${encodeURIComponent(scopes)}`;
 

@@ -1,0 +1,55 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Logs
+logs/
+*.log
+logs/*.log
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Environment Variables
+.env
+.env.local
+.env.*.local
+
+# Build Files
+dist/
+build/
+out/
+.temp/
+
+# Dependency directories
+jspm_packages/
+
+# IDE Specific
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+
+# OS Specific
+.DS_Store
+Thumbs.db
+
+# Coverage Reports
+coverage/
+*.lcov
+
+# Miscellaneous
+*.bak
+*.tmp
+*.temp
+
+# React Specific
+public/static/
+*.cache
+.cache-loader
